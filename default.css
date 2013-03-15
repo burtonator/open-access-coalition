@@ -1,0 +1,14 @@
+/* "auto" makes the left and right margins center the wrapper */
+#wrap { 
+	width: 900px; 
+	margin: 0 auto; 
+}
+
+#content { 
+    margin-left: 10px;
+}
+
+body {
+   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+   font-weight: 300;
+}
