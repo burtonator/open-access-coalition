@@ -10,6 +10,13 @@
 
 <a href="/"><img src="logo.png" /></a>
 
+<div class="navbar">
+<a href="/">Home</a>
+<a href="faq.html">FAQ</a>
+<a href="http://blog.openaccesscoalition.org" target="_new">Weblog</a>
+<a href="https://groups.google.com/forum/?fromgroups#!forum/oac-general" target="_new">Group</a>
+</div>
+
 <div id="content">
 
 <h1>Our goal is to fight for the open web!</h1>
@@ -25,13 +32,13 @@
 
 <p>
   A real world example is the way Google fetches content from websites on the
-  Internet and was able to build a billion dollar industry on data posted
+  Internet and was able to build a billion dollar company on data posted and shared
   publicly.
 </p>
 
 <p>Much of this data is published within the public domain, available under
   fair use, or Creative Commons license.
-  </p>
+</p>
 
 <p>Problems arise when this data is subsequently blocked from being
  accessed by 3rd parties <b>even</b> when the 3rd party has a license for the
@@ -85,43 +92,104 @@ and Microsoft but not to anyone else.
 Without non-discriminatory access, the web is not open.
 </p>
 
+<h2>Don't these websites OWN the data?</h2>
+
+<p>No.  Very few websites own the data submitted by the user.  They often
+request permissions to use the data within their application but do not attempt to
+assert exclusive copyright on their user generated content.</p>
+
+<p>The copyright on the data is owned by the user and often under the public domain,
+a Creative Commons license, or available for access under fair use doctrine.</p>
+
+<p>Recently, <a href="https://www.eff.org/deeplinks/2012/08/good-news-craigslist-drops-exclusive-license-your-posts">Craigslist decided to (shortly) assert exclusive copyright on user
+generated content</a> but then did the right thing and backed down from that position:</p>
+
+<p>
+<blockquote>
+
+<p>
+ In a welcome course correction, craigslist has removed its short-lived provision that required users to grant it an exclusive license to--in other words granting them ownership of--every post. We were unhappily surprised to see this click-through demand, but are glad to see that craigslist has promptly removed it. 
+</p>
+ 
+<p>
+ For many years, craigslist has been a good digital citizen. Its opposition to SOPA/PIPA was critically important, and it has been at the forefront of challenges to Section 230 and freedom of expression online. We understand that craigslist faces real challenges in trying to preserve its character and does not want third parties to simply reuse its content in ways that are out of line with its user community’s expectations and could be harmful to its users. 
+</p>
+
+<p>
+ Nevertheless, it was important for craigslist to remove the provision because claiming an exclusive license to the user’s posts--to the exclusion of everyone, including the original poster--would have harmed both innovation and users’ rights, and would have set a terrible precedent. We met with craigslist to discuss this recently and are pleased about their prompt action.  
+</p>
+
+</blockquote>
+</p>
+
+<h2>Don't crawlers and use excessive resources when indexing a site?</h2>
+
+<p>No.  Not fair crawlers.</p>
+
+<p>We want to make it clear that we do not support or defend excessive resource
+utilization used by misbehaving crawlers and robots. These systems cause havoc
+and are very costly to many websites.</p>
+
+<p>However, for large sites, fetching the home page or an RSS feed of public
+content imposes a very insignificant impact on the site's performance. For a
+website receiving 1M hits per day, fetching the home page once per hour
+increases the load on the website by 0.01%.</p>
+
+<p>Further, if the site were to publish an update stream via
+<a href="https://code.google.com/p/pubsubhubbub/">pubsub</a> or an
+<a href="http://www.sixapart.com/labs/update/developers/">update stream</a>
+the resouce utilization is almost zero.
+</p>
+
+<p>For years, <a href="http://sixapart.com">Six Apart</a> was publishing a
+stream of updates to anyone who wanted access, free of charge, nearly
+spam-free, and with non-discriminatory access to all parties.</p>
+
+<p>They also went further and provided the feed to anyone who wanted it -
+immediately.  They also removed private posts from the stream to minimize user
+concerns about their private posts being indexed by search engines.</p>
+
+<p>
+Often, the resource utilization issue is a red herring used as an excuse to
+continue unfair access policies.
+</p>
+
+<p>They still provide access to the same feed but have migrated to a more
+modern protocol - pubsub.</p>
+
 <h2>Don't hosting providers have the right to publish content under any terms they desire?</h2>
 
 <p>
 Yes.  A hosting provider is well within their rights to publish
-data under any license they choose.  This could either be very unfair <i>or</i>
-very fair.
+data under any license they choose.  This could range from being completely unfair <i>or</i>
+<b>very</b> fair.
 </p>
 
 <p>However, users have the right to know about the access policies of
-sites they use, similar to privacy policies.
+sites they use, similar to the way websites publish privacy policies.
 </p>
 
-<p>Further, the OAC and the user community is free to criticize these sites or
-take their business elsewhere.
-</p>
+<p>Further, the OAC and the user community is free to criticize these sites and
+encourage users to take their business elsewhere. </p>
 
-<p>We believe it's in the users best interest to insist on using sites that
-have fair access.  Additionally, we feel it's vital to the growth of the
-industry to have a free, fair, and open Internet.
-</p>
+<p>We believe it's in the users best interest to insist on using sites that have
+fair access. Additionally, we feel it's vital to the growth of the industry to
+have a free, fair, and open Internet. </p>
 
 <h2>What are some common examples that violate fair access?</h2>
 
 <h3>Blocking all crawlers via robots.txt - except Google.</h3>
 
-<p>This happens far too often.  This is a problem for new search
-engines because they have to make a decision about whether to yield to
-the robots.txt block, contact the website owner (which could involve
-thousands of websites) or providing a sub-standard experience to their
-users.
-</p>
+<p>This happens far too often. This is a problem for new search engines because
+they have to make a decision about whether to yield to the robots.txt block,
+contact the website owner (which could involve thousands of websites) or
+providing a sub-standard experience to their users. </p>
 
 <h3>Differential pricing based on size, or hidden partnerships.</h3>
 
-<p>There have been situations where API licenses are given based on
-hidden partnerships, private investments, or size of company which have
-prevented open use of the data.</p>
+<p>There have been situations where API licenses are given based on hidden
+partnerships, private investments, or size of company which have prevented open
+use of the data.</p>
 
 <p>One example is Twitter's firehose license to Google and Microsoft.</p>
 
@@ -129,15 +197,15 @@ prevented open use of the data.</p>
 and Google eventually didn't like the terms and <a href="http://allthingsd.com/20110715/with-google-gone-for-now-twitter-tries-to-come-to-terms-with-microsofts-bing/">cancelled their license</a>.
 </p>
 
-<p>The issue seems to be that Twitter was attempting to charge Google
-an excessive price for a full license for which Google refused.</p>
+<p>The issue seems to be that Twitter was attempting to charge Google an
+excessive price for a full license for which Google refused.</p>
 
 <h3>Harassment</h3>
 
-<p>There have also been situations where large social networks have
-harassed both individuals and small companies with large lawsuits or
-threat of lawsuit simply for accessing data in new and compelling
-situations - even when perfectly lawful.</p
+<p>There have also been situations where large social networks have harassed
+both individuals and small companies with large lawsuits or threat of lawsuit
+simply for accessing data in new and compelling situations - even when perfectly
+lawful.</p
 
 </div>
     
