@@ -178,14 +178,14 @@ have a free, fair, and open Internet. </p>
 
 <h2>What are some common examples that violate fair access?</h2>
 
-<h3>Blocking all crawlers via robots.txt - except Google.</h3>
+<h3>Blocking all crawlers via robots.txt - except Google:</h3>
 
 <p>This happens far too often. This is a problem for new search engines because
 they have to make a decision about whether to yield to the robots.txt block,
 contact the website owner (which could involve thousands of websites) or
 providing a sub-standard experience to their users. </p>
 
-<h3>Differential pricing based on size, or hidden partnerships.</h3>
+<h3>Differential pricing based on size, or hidden partnerships:</h3>
 
 <p>There have been situations where API licenses are given based on hidden
 partnerships, private investments, or size of company which have prevented open
@@ -200,12 +200,52 @@ and Google eventually didn't like the terms and <a href="http://allthingsd.com/2
 <p>The issue seems to be that Twitter was attempting to charge Google an
 excessive price for a full license for which Google refused.</p>
 
-<h3>Harassment</h3>
+<h3>Harassment:</h3>
 
 <p>There have also been situations where large social networks have harassed
 both individuals and small companies with large lawsuits or threat of lawsuit
 simply for accessing data in new and compelling situations - even when perfectly
-lawful.</p
+lawful.</p>
+
+<h3>Explicitly blocking user agents:</h3>
+
+<p>HTTP requests include a User-Agent header which is used to specify the
+agent requesting a URL.</p>
+
+<p>For example, the Googlebot user agent is:
+</p>
+
+<p>
+<code>Mozilla/5.0 (compatible; Googlebot/2.1; +http://www.google.com/bot.html)</code>
+</p>
+
+<p>It be difficult to block Googlebot because web traffic would fall off
+significantly (as well as revenue for your website).  However, smaller websites
+and startups often have their code blocked by websites based on User-Agent.
+</p>
+
+<h2>What is rate limiting?  What are IP throttles?</h2>
+
+<p>
+<a href="http://en.wikipedia.org/wiki/Rate_limiting">Rate limiting</a> is often
+used by websites to ostensibly avoid excessive and expensive resource utilization.
+</p>
+
+<p>
+It may in fact be used by this in a number of circumstances but by definition,
+once you allow anyone to bypass the throttle you have discriminatory access.
+</p>
+
+<p>Rate limiting is generally done on an API key which the API requires be
+submitted with each request.  </p>
+
+<p>An IP throttle is used to only allow a given IP address a few requests per
+hour (or some other arbitrarly duration like per minute).
+</p>
+
+<p>IP throttles are especially troubling as they often hurt legitimate companies
+but don't hurt companies willing to bypass the IP blocks through controversial
+measures.</p>
 
 </div>
     
