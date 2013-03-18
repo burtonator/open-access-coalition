@@ -2,7 +2,18 @@
 <html>
 <head>
 <title>Open Access Coalition</title>
+
 <link rel="stylesheet" href="default.css"></link>
+
+<link rel="alternate"
+      type="application/rss+xml"
+      title="Open Access Coalition &raquo; Feed"
+      href="http://blog.openaccesscoalition.org/feed/" />
+
+<link rel="alternate"
+      type="application/rss+xml"
+      title="Open Access Coalition &raquo; Comments Feed"
+      href="http://blog.openaccesscoalition.org/comments/feed/" />
 
 <script type="text/javascript">
 
