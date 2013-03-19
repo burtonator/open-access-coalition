@@ -41,7 +41,7 @@
     <a href="http://openaccesscoalition.org/">Home</a>
     <a href="http://openaccesscoalition.org/faq.html">FAQ</a>
     <a href="http://openaccesscoalition.org/members.html">Members</a>
-    <a href="http://blog.openaccesscoalition.org" target="_new">Weblog</a>
+    <a href="http://blog.openaccesscoalition.org">Weblog</a>
     <a href="https://groups.google.com/forum/?fromgroups#!forum/oac-general" target="_new">Group</a>
 </div>
 
