@@ -38,10 +38,12 @@
 <a href="http://openaccesscoalition.org/"><img src="logo.png" width="579" height="169"/></a>
 
 <div class="navbar">
-<a href="http://openaccesscoalition.org/">Home</a>
-<a href="http://openaccesscoalition.org/faq.html">FAQ</a>
-<a href="http://blog.openaccesscoalition.org" target="_new">Weblog</a>
-<a href="https://groups.google.com/forum/?fromgroups#!forum/oac-general" target="_new">Group</a>
+    <a href="http://openaccesscoalition.org/">Home</a>
+    <a href="http://openaccesscoalition.org/faq.html">FAQ</a>
+    <a href="http://blog.openaccesscoalition.org" target="_new">Weblog</a>
+    <a href="https://groups.google.com/forum/?fromgroups#!forum/oac-general" target="_new">Group</a>
 </div>
+
+<div id="content">
 
 <!-- end of header -->
