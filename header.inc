@@ -8,12 +8,12 @@
 <link rel="alternate"
       type="application/rss+xml"
       title="Open Access Coalition &raquo; Feed"
-      href="http://blog.openaccesscoalition.org/feed/" />
+      href="http://blog.openaccesscoalition.org/feed/"></link>
 
 <link rel="alternate"
       type="application/rss+xml"
       title="Open Access Coalition &raquo; Comments Feed"
-      href="http://blog.openaccesscoalition.org/comments/feed/" />
+      href="http://blog.openaccesscoalition.org/comments/feed/"></link
 
 <script type="text/javascript">
 
