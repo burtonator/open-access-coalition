@@ -86,3 +86,14 @@ q {
 { 
   width: 650px;
   }
+
+.member-image
+{
+  background: red;
+  text-align: center;
+  width: 300px;
+
+  position: absolute;
+  left: 600px;
+  
+  }
