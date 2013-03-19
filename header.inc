@@ -44,4 +44,6 @@
 <a href="https://groups.google.com/forum/?fromgroups#!forum/oac-general" target="_new">Group</a>
 </div>
 
+<div id="content">
+
 <!-- end of header -->
