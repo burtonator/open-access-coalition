@@ -89,11 +89,6 @@ q {
 
 .member-image
 {
-  background: red;
-  text-align: center;
   width: 250px;
-
-  position: absolute;
-  left: 800px;
   
   }
