@@ -81,3 +81,8 @@ blockquote {
 q { 
     font-style: italic;
  }
+
+.member-quote
+{ 
+  width: 650px;
+  }
