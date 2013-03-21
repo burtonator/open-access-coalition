@@ -5,11 +5,81 @@ title: none
 
 {% include header.inc %}
 
+<p> Our friends at <a href="http://blekko.com">Blekko</a> were able to provide
+us with a 15GB dump of robots.txt from 145M domains.  This enabled us to perform
+an audit of open access policies across the web.  </p>
+
+<p>Out of 145M domains audited, 1.5M blocked crawlers by default (or 1%). We
+also highlight where unfair access has been granted to other search engines but
+not by default to newer crawlers (like Blekko, <a href="http://commoncrawl.org">Common Crawl</a>, etc).</p>
+
+<p>This should be considered the lower bound on the number of domains that block
+crawlers.  There are difficulties in parsing robots.txt which make it hard to
+determine if a site is still blocked.</p>
+
+<p>
+Right now we simply look for:
+</p>
+
+<p>
+<blockquote>
+<code>
+User-agent: *<br/>
+Disallow: /
+</code>
+</blockquote>
+<p>
+
+<p>
+to detect a blocked website.
+</p>
+
+<p>However, there may be other more complicated ways to block a website.  For example:
+</p>
+
+<p>
+<blockquote>
+<code>
+User-agent: *<br/>
+Disallow: /blog
+</code>
+</blockquote>
+<p>
+
+<p>
+Would accomplish the same thing if all the content on the site is under /blog.
+However, at scale, it's nearly impossible to <i>easily</i> detect this.
+</p>
+
+
+<p>Due to the complexity here it's very unlikely that this data represents an
+accurate assessment of the real level of robot blocks across the web but this
+represents the lower bound.</p>
+<p>
+
+<p>Additionally, this doesn't take into consideration the total number of pages
+blocked.  The number 1 item right now is Facebook, which obviously hosts a
+massive number of pages on the web.</p>
+
+<p>
+There is also the subjective value of these domains.  <a
+href="http://www.dailykos.com">DailyKos</a> which is blocked here is arguably
+more important in a political context than <a href="http://www.sciencedirect.com">Science Direct</a>
+</p>
+
+<p> The robots.txt files on these domains may also be stale.  Blekko updates
+them occasionally and the robots.txt may have been refreshed by now (and in a
+number of these sites has been updated).  The important aspect of this is that
+they were blocked to Blekko while this version of robots.txt was being used by
+their crawler.</p>
+
+<p align="center">
 <iframe width='700'
         height='4500'
         frameborder='0'
         src='https://docs.google.com/spreadsheet/pub?key=0AkBAy3nnEh65dGY0YTR3T2hZMGhxZC1qaFdTQlU5cHc&single=true&gid=0&output=html&widget=true'></iframe>
-
+</p>
+        
 <!-- BEGIN of footer -->
 
 <div class="footer">
