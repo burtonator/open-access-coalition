@@ -20,12 +20,15 @@ title: Firehose Costs
 <table width="500">
 <tr><td><b>posts per day: </b></td>                                  <td>300M</td></tr>
 <tr><td><b>bytes per month<sup>1</sup>: </b></td>     <td>1.2TB</td></tr>
-<tr><td><b>price per month (bytes per month * $0.15 (Amazon EC2 pricing)): </b></td>     <td>$189</td></tr>
+<tr><td><b>price per month<sup>2</sup>: </b></td>     <td>$189</td></tr>
 </table>
 
 <p>
 <small>
-    1. 150 bytes for the max post length multipled by number of posts per day multipled by 30 days in a month.
+    1. 150 bytes for the max post length multipled by number of posts per day multipled by 30 days in a month. <br/>
+
+    2. Bytes per month multipled by $0.15 which is Amazon EC2's highest tier for banwidth.  In practice a production application would be much less expensive.
+
 </small>
 </p>
 
