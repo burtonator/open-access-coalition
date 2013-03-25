@@ -17,10 +17,12 @@ title: Firehose Costs
 
 <p>At the time of this writing, Twitter is indexing about 300M tweets per day.  If we were to break this down into the costs to serve this API we would have:</p>
 
+<h3>Bandwidth costs</h3>
+
 <table width="500">
-<tr><td><b>posts per day: </b></td>                                  <td>300M</td></tr>
-<tr><td><b>bytes per month<sup>1</sup>: </b></td>     <td>1.2TB</td></tr>
-<tr><td><b>price per month<sup>2</sup>: </b></td>     <td>$189</td></tr>
+<tr><td><b>posts per day: </b></td>                    <td>300M</td></tr>
+<tr><td><b>bytes per month <sup>1</sup>: </b></td>     <td>1.2TB</td></tr>
+<tr><td><b>price per month <sup>2</sup>: </b></td>     <td>$189</td></tr>
 </table>
 
 <p>
@@ -29,6 +31,23 @@ title: Firehose Costs
 
     2. Bytes per month multipled by $0.15 which is Amazon EC2's highest tier for banwidth.  In practice a production application would be much less expensive.
 
+</small>
+</p>
+
+<h3>Hardware costs</h3>
+
+<p>The above numbers are just for bandwidth.</p>
+
+<p>Hardware is another important cost.  Generally speaking, one server handle multiple API customers.</p>
+
+<table width="500">
+<tr><td><b>Mbps for content transfer per client:<sup>1</sup>: </b></td>     <td>4.1Mbps</td></tr>
+<tr><td><b>price per month <sup>2</sup>: </b></td>     <td>$189</td></tr>
+</table>
+
+<p>
+<small>
+1.  bytes per month divided by the number of seconds in a months multiplied by 8 (since there are 8 bites per byte).
 </small>
 </p>
 
