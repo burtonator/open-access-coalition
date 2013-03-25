@@ -17,11 +17,17 @@ title: Firehose Costs
 
 <p>At the time of this writing, Twitter is indexing about 300M tweets per day.  If we were to break this down into the costs to serve this API we would have:</p>
 
-<table>
+<table width="500">
 <tr><td><b>posts per day: </b></td>                                  <td>300M</td></tr>
-<tr><td><b>bytes per month (150 * posts per day * 30): </b></td>     <td>1.2TB</td></tr>
+<tr><td><b>bytes per month<sup>1</sup>: </b></td>     <td>1.2TB</td></tr>
 <tr><td><b>price per month (bytes per month * $0.15 (Amazon EC2 pricing)): </b></td>     <td>$189</td></tr>
 </table>
+
+<p>
+<small>
+    1. 150 bytes for the max post length multipled by number of posts per day multipled by 30 days in a month.
+</small>
+</p>
 
 <h2>Blogging</h2>
 
