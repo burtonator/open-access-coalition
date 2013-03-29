@@ -21,17 +21,16 @@ title: Firehose Costs
 
 <table width="500">
 <tr><td><b>posts per day: </b></td>                    <td>600M</td></tr>
-<tr><td><b>bytes per month <sup>1</sup>: </b></td>     <td>3.6TB</td></tr>
-<tr><td><b>bytes per month compressed <sup>2</sup>: </b></td>     <td>1.2TB</td></tr>
-<tr><td><b>price per month <sup>3</sup>: </b></td>     <td>$545</td></tr>
+<tr><td><b>bytes per month <sup>1</sup>: </b></td>     <td>2.5TB</td></tr>
+<tr><td><b>bytes per month compressed <sup>2</sup>: </b></td>     <td>830GB</td></tr>
+<tr><td><b>price per month <sup>3</sup>: </b></td>     <td>$1,159</td></tr>
 </table>
 
 <p>
 <small>
-    1. 150 bytes for the max post length plus say 500 bytes for metadata multipled by number of posts per day multipled by 30 days in a month.  The number we selected for tweets per month was <a href="http://news.cnet.com/8301-1023_3-57541566-93/report-twitter-hits-half-a-billion-tweets-a-day/">a bit liberal</a>.<br/>
+    1. 150 bytes for the max post length plus say 4000 bytes for metadata multipled by number of posts per day multipled by 30 days in a month.  The number we selected for tweets per month was <a href="http://news.cnet.com/8301-1023_3-57541566-93/report-twitter-hits-half-a-billion-tweets-a-day/">a bit liberal</a>.<br/>
     2. Compression (gzip) is often used to transfer the content and a 3x compression ratio is reasonable. <br/>
-    3. Bytes per month multipled by $0.15 which is Amazon EC2's highest tier for banwidth.  In practice a production application would be much less expensive.
-
+    3. Bytes per month multipled by $0.05 which is Softlayer's price for 2TB of bandwidth.  
 </small>
 </p>
 
@@ -40,10 +39,10 @@ title: Firehose Costs
 <p>The above numbers are just for bandwidth.  Hardware is another important cost.  Generally speaking, one server handle multiple API customers.</p>
 
 <table width="500">
-<tr><td><b>Mbps for content transfer per client:<sup>1</sup>: </b></td>     <td>12Mbps</td></tr>
-<tr><td><b>Clients per server: <sup>2</sup></b></td>                        <td>83</td></tr>
+<tr><td><b>Mbps for content transfer per client:<sup>1</sup>: </b></td>     <td>76Mbps</td></tr>
+<tr><td><b>Clients per server: <sup>2</sup></b></td>                        <td>13</td></tr>
 <tr><td><b>Typical per month server cost: <sup>3</sup></b></td>             <td>$500 USD</td></tr>
-<tr><td><b>Cost per client: <sup>4</sup></b></td>                           <td>$6.02 USD</td></tr>
+<tr><td><b>Cost per client: <sup>4</sup></b></td>                           <td>$38.43 USD</td></tr>
 </table>
 
 <p>
@@ -57,7 +56,7 @@ title: Firehose Costs
 
 <h2>Conclusion</h2>
 
-<p>The price per connection is about $545 for transfer plus $6 per connection.  $561 seems a reasonable API cost for basic transport.  We're not talking about thousands of clients here.  Further, we are more than fine with hosting providers paying for their transfer costs to provide fair and reasonable access to 3rd parties.</p>
+<p>The price per connection is about $1,159 for transfer plus $38 per connection.  $1,198 seems a reasonable API cost for basic transport.  We're not talking about thousands of clients here.  Further, we are more than fine with hosting providers paying for their transfer costs to provide fair and reasonable access to 3rd parties.</p>
 
 <p>
 Pricing for a blogging service would be higher considering blog posts are usually longer.  About 5-10x is a reasonable multiplier.
