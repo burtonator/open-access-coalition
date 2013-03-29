@@ -29,6 +29,11 @@
 
 </script>
 
+<meta property="og:type"        content="website" /> 
+<meta property="og:title"       content="{{page.title}}" /> 
+<meta property="og:image"       content="http://openaccesscoalition.org/logo.png" /> 
+<meta property="og:description" content="{{page.description}}" />
+
 </head>
 
 <body>
